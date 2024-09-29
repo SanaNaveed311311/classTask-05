@@ -9,12 +9,43 @@ body{
     box-sizing: border-box;
 }
 
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+.container {
+    text-align: center;
+    color: white;
+}
+
+.input-container {
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.result {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    margin: 5px;
+}
