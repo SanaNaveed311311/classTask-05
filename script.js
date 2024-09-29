@@ -12,3 +12,20 @@ function calculateAge() {
     let months = now.getMonth() - dobDate.getMonth();
     let days = now.getDate() - dobDate.getDate();
     
+    if (days < 0) {
+        months--;
+        let previousMonth = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+        days += previousMonth;
+    }
+    
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    // Update the HTML with the result
+    document.getElementById("years").innerText = years;
+    document.getElementById("months").innerText = months;
+    document.getElementById("days").innerText = days;
+}
+
