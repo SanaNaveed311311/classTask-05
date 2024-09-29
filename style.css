@@ -20,26 +20,25 @@ body {
 .container {
     text-align: center;
     color: white;
-
+background-color: black;
+height: 13%;
+border-radius: 10px
 }
 
-input{
-    width: 50%;
-} 
 
-.input-container {
-    background-color: black;
-    padding: 20px;
-    margin-bottom: 30px;
-    width: 10%;
 
-   
+.container button{
+    margin-left: -20px;
 }
 
 input, button {
     padding: 5px;
     margin: 30px;
 
+}
+#dob{
+    margin-top: -40%;
+    margin-bottom: 10px;
 }
 
 .result-container {
@@ -55,5 +54,6 @@ input, button {
     width: 100px;
     text-align: center;
     margin: 2px;
+    border-radius: 10%;
 
 }
